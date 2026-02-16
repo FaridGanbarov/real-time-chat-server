@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: RealTimeChatServer
+  datasource:
+    first:
+      url: jdbc:postgresql://localhost:5432/User
+      username: SECURITY
+      password: SECURITY
+  jpa:
+    show-sql: true
+    first:
+      hibernate:
+        ddl-auto: update
+security:
+  key: "jvdIc8VZQrh6T17RAywe6e/3u7wQ/WEXIUuLD1FWYo01yQcjjmjOBfwY/KeHu5cBaNMeJI0pZIMOwNCQuVnMvQ=="
+refresh-token:
+  expiration: 2592000000
+
+access-token:
+  expiration: 600000
+
+verification-code:
+  expiration: 300000
+
+activation-token:
+  expiration: 86400000
+
+server:
+  port: 8080
